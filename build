@@ -1,9 +1,8 @@
 #!/bin/bash
-cd /tmp/rom # Depends on where source got synced
-rm -rf .repo & # lets remove unnecessary things, so that no storage issue can occur
+cd /tmp/rom
 
-# Normal build steps
-. build/envsetup.sh
+
+source build/envsetup.sh
 lunch lighthouse_miatoll-userdebug
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
@@ -13,8 +12,7 @@ ccache -o compression=true
 ccache -z
 
 up(){
-	curl --upload-file $1 https://transfer.sh/
-}
+	curl bashupload.com -T $1
 
 make_metalava(){
 	mka api-stubs-docs -j16
