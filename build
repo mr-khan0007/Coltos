@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /tmp/rom
 rm -rf .repo
-#build pls
+
 source build/envsetup.sh
 lunch
 3
