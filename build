@@ -3,8 +3,7 @@ cd /tmp/rom
 rm -rf .repo
 
 source build/envsetup.sh
-lunch
-3
+lunch lighthouse_miatoll-userdebug
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
