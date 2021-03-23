@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /tmp/rom
-
+rm -rf .repo
 
 source build/envsetup.sh
 lunch lighthouse_miatoll-userdebug
