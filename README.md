@@ -20,3 +20,5 @@ I tried to explian every steps by comments! Try to read those throughly!
 9. Build should start on cirrus, after 2 hrs, ccache will complete(build will be incomplete, only ccache generated) now mirror that ccahce in any gdrive mirror group with the extension .tar.gz   example: ccache1.tar.gz
 10. Now use "build" branch and edit "build" and "sync" again (with your device sauce and rom manifest), this time also edit "ccache_upload" branch and place your download link and edit the extract name respectively(depending on what name you've given while mirroring)
 Build should be done, if time remains, even new ccache can be uploaded(not needed tho)
+
+11. **optional:** If your build fails due to kernel issues, then use prebuilt kernel
