@@ -22,4 +22,4 @@ I tried to explian every steps by comments! Try to read those throughly!
 Build should be done, if time remains, even new ccache can be uploaded(not needed tho)
 
 11. **optional:** If your build fails due to kernel issues, then use prebuilt kernel
-12. see "example" branch to see how stuff is done, if you know what youre doing, you can edit other vaules too
+12. see "example" branch to see how stuff is done, **if you know what youre doing**, you can edit other vaules too
