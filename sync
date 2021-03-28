@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt install wget
-MANIFEST=https://github.com/NusantaraProject-ROM/android_manifest ##edit this
-BRANCH=11  ##edit this
+MANIFEST=https://github.com/PixelExtended/manifest.git ##edit this
+BRANCH=eleven  ##edit this
 
 mkdir -p /tmp/rom
 cd /tmp/rom
@@ -17,6 +17,6 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 
 ##delete these lines, and replace with your own lines of device sauce
-git clone https://github.com/Realme-G95-Series/proprietary_vendor_realme_RMX2151.git vendor/realme/RMX2151 
+git clone https://github.com/SamarV-121/proprietary_vendor_realme.git vendor/realme/RMX2151 
 git clone https://github.com/noobsauraj/device_realme_RMX2151.git device/realme/RMX2151
 
