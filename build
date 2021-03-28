@@ -22,7 +22,7 @@ make_metalava(){
 }
 
 make_rom(){
-	make bacon -j16
+	make nad -j16
 	zip=$(up out/target/product/RMX2151/*zip) ##edit this change from miatoll---> /<your device codename>
 	echo " "
 	echo "$zip"
