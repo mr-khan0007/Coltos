@@ -3,7 +3,7 @@ cd /tmp/rom
 rm -rf .repo &
 
 source build/envsetup.sh
-lunch nad_RMX2151-userdebug ##edit this
+lunch aosp_RMX2151-userdebug ##edit this
 export CCACHE_DIR=/tmp/ccache  ##use additional flags if you need(optional)
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
@@ -22,7 +22,7 @@ make_metalava(){
 }
 
 make_rom(){
-	make nad -j16
+	make aosp -j16
 	zip=$(up out/target/product/RMX2151/*zip) ##edit this change from miatoll---> /<your device codename>
 	echo " "
 	echo "$zip"
