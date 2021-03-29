@@ -2,7 +2,7 @@
 cd /tmp/rom
 rm -rf .repo &
 
-. build.sh
+. build/envsetup.sh
 lunch havoc_RMX2151-userdebug ##edit this
 export CCACHE_DIR=/tmp/ccache  ##use additional flags if you need(optional)
 export CCACHE_EXEC=$(which ccache)
