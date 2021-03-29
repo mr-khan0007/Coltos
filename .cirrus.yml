@@ -18,5 +18,5 @@ task:
     upload_ccache_script:
       - bash upload_ccache
 
-#start buuild 
+#start build 
 
