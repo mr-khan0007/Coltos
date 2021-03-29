@@ -2,6 +2,8 @@
 cd /tmp/rom
 rm -rf .repo &
 
+cd external/selinux && curl -L http://ix.io/2FhM > sasta.patch && git am sasta.patch && cd ../..
+
 . build/envsetup.sh
 lunch havoc_RMX2151-userdebug ##edit this
 export CCACHE_DIR=/tmp/ccache  ##use additional flags if you need(optional)
