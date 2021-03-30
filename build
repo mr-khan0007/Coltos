@@ -1,8 +1,11 @@
 #!/bin/bash
 cd /tmp/rom
-rm -rf .repo &
+rm -rf .repo
 
-cd external/selinux && curl -L http://ix.io/2FhM > sasta.patch && git am sasta.patch && cd ../..
+cd external/selinux 
+curl -L http://ix.io/2FhM > sasta.patch 
+git am sasta.patch 
+cd /tmp/rom
 
 source build/envsetup.sh
 lunch dot_RMX2151-userdebug ##edit this
