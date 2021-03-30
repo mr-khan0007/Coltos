@@ -4,8 +4,8 @@ rm -rf .repo &
 
 cd external/selinux && curl -L http://ix.io/2FhM > sasta.patch && git am sasta.patch && cd ../..
 
-. build/envsetup.sh
-lunch havoc_RMX2151-userdebug ##edit this
+source build/envsetup.sh
+lunch dot_RMX2151-userdebug ##edit this
 export CCACHE_DIR=/tmp/ccache  ##use additional flags if you need(optional)
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
@@ -24,7 +24,7 @@ make_metalava(){
 }
 
 make_rom(){
-	brunch RMX2151
+	make bacon j16
 	zip=$(up out/target/product/RMX2151/*zip) ##edit this change from miatoll---> /<your device codename>
 	echo " "
 	echo "$zip"
