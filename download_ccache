@@ -1,10 +1,10 @@
 #!/bin/bash
 
-url=https://ghostmirror.hitesh920.workers.dev/noob4.tar.gz
+url=https://ghostmirror.hitesh920.workers.dev/noob99.tar.gz
 
 cd /tmp # Where to download cccahe
 time aria2c $url -x16 -s50
 echo "dl done"
-time tar xf noob4.tar.gz
+time tar xf noob99.tar.gz
 echo "unzip done"
-find noob4.tar.gz -delete
+find noob99.tar.gz -delete
