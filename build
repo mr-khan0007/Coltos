@@ -27,7 +27,7 @@ make_metalava(){
 }
 
 make_rom(){
-	brunch RMX2151
+	brunch 
 	send_zip=$(up out/target/product/RMX2151/*zip) ##edit this change from miatoll---> /<your device codename>
 	echo " "
 	echo "$zip"
