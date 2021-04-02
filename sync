@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt install wget
-MANIFEST=https://github.com/AICP/platform_manifest.git ##edit this
-BRANCH=r11.1  ##edit this
+MANIFEST=https://github.com/NezukoOS/manifest.git ##edit this
+BRANCH=eleven  ##edit this
 
 mkdir -p /tmp/rom
 cd /tmp/rom
@@ -14,10 +14,11 @@ git config --global user.email kumarsauraj24@gmail.com
 # Sync source with -q, no need unnecessary messages, you can remove -q if want! try with -j30 first, if fails, it will try again with -j8
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
-cd /tmp/rom
+pwd
+ls
 
 ##delete these lines, and replace with your own lines of device sauce
 git clone https://github.com/Realme-G95-Series/proprietary_vendor_realme_RMX2151.git vendor/realme/RMX2151 
-git clone https://github.com/noobyysauraj/device_realme_RMX2151-1.git device/realme/RMX2151
+git clone https://github.com/ksauraj1/device_realme_RMX2151-1.git device/realme/RMX2151
 
 cd /tmp/rom
