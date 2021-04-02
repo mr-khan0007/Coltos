@@ -1,10 +1,10 @@
 #!/bin/bash
 
-url=https://ghostmirror.hitesh920.workers.dev/bc69.tar.gz
+url=https://ghostmirror.hitesh920.workers.dev/sau.tar.gz
 
 cd /tmp # Where to download cccahe
 time aria2c $url -x16 -s50
 echo "dl done"
-time tar xf bc69.tar.gz
+time tar xf sau.tar.gz
 echo "unzip done"
-find bc69.tar.gz -delete
+find sau.tar.gz -delete
