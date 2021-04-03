@@ -1,10 +1,10 @@
 #!/bin/bash
 
-url=https://ghostmirror.hitesh920.workers.dev/final.tar.gz
+url=https://ghostmirror.hitesh920.workers.dev/epic.tar.gz
 
 cd /tmp # Where to download cccahe
 time aria2c $url -x16 -s50
 echo "dl done"
-time tar xf final.tar.gz
+time tar xf epic.tar.gz
 echo "unzip done"
-find final.tar.gz -delete
+find epic.tar.gz -delete
