@@ -18,6 +18,6 @@ cd /tmp/rom
 
 ##delete these lines, and replace with your own lines of device sauce
 git clone https://github.com/Realme-G95-Series/proprietary_vendor_realme_RMX2151.git vendor/realme/RMX2151 
-git clone https://github.com/mr-khan007/device_realme_RMX2151-1.git device/realme/RMX2151
+git clone https://github.com/Mr-khan007/device_realme_RMX2151.git device/realme/RMX2151
 
 cd /tmp/rom
