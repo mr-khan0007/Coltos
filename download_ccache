@@ -1,10 +1,10 @@
 #!/bin/bash
 
-url=https://ghostmirror.hitesh920.workers.dev/neku.tar.gz
+url=https://ghostmirror.hitesh920.workers.dev/final.tar.gz
 
 cd /tmp # Where to download cccahe
 time aria2c $url -x16 -s50
 echo "dl done"
-time tar xf neku.tar.gz
+time tar xf final.tar.gz
 echo "unzip done"
-find neku.tar.gz -delete
+find final.tar.gz -delete
