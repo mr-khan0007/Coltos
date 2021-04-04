@@ -3,10 +3,10 @@ env: # Environt variable to pass to all tasks
     CIRRUS_WORKING_DIR: "/tmp/ci" # Where to clone repo
 task:
     name: Buildbomt
-    timeout_in: 119m
+    timeout_in: 120m
     container:
       image: mrkhan007/aosp:latest
-      cpu: 8
+      cpu: 9
       memory: 24G
     download_ccache_script:
       - bash download_ccache
