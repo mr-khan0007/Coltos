@@ -1,10 +1,10 @@
 #!/bin/bash
 
-url=https://ghostmirror.hitesh920.workers.dev/epic.tar.gz
+url=https://ghostmirror.hitesh920.workers.dev/build1.tar.gz
 
 cd /tmp # Where to download cccahe
 time aria2c $url -x16 -s50
 echo "dl done"
-time tar xf epic.tar.gz
+time tar xf build1.tar.gz
 echo "unzip done"
-find epic.tar.gz -delete
+find build1.tar.gz -delete
