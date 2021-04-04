@@ -7,7 +7,7 @@ curl -L http://ix.io/2FhM > sasta.patch
 git am sasta.patch 
 cd /tmp/rom
 
-source .build/envsetup.sh
+source build/envsetup.sh
 lunch colt_RMX2151-userdebug ##edit this
 export CCACHE_DIR=/tmp/ccache  ##use additional flags if you need(optional)
 export CCACHE_EXEC=$(which ccache)
