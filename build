@@ -8,7 +8,7 @@ git am sasta.patch
 cd /tmp/rom
 
 source build/envsetup.sh
-lunch kangos_RMX2151-userdebug ##edit this
+lunch colt_RMX2151-userdebug ##edit this
 export CCACHE_DIR=/tmp/ccache  ##use additional flags if you need(optional)
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
